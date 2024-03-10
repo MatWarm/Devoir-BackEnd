@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Définir le nom de votre image Docker ici
         DOCKER_IMAGE = 'app-backend:v1.0.0'
     }
 
@@ -15,7 +14,6 @@ pipeline {
         stage('Build et Dockerisation') {
             steps {
                 echo 'Construction et Dockerisation de l\'application...'
-                // Construire l'image Docker à partir du Dockerfile situé à la racine du projet
                 sh 'whoami'
                 sh 'docker build -t $DOCKER_IMAGE .'
             }
