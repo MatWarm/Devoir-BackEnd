@@ -16,6 +16,7 @@ pipeline {
             steps {
                 echo 'Construction et Dockerisation de l\'application...'
                 // Construire l'image Docker à partir du Dockerfile situé à la racine du projet
+                sh 'whoami'
                 sh 'docker build -t $DOCKER_IMAGE .'
             }
         }
