@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Définir le nom de votre image Docker ici
-        DOCKER_IMAGE = 'App-backend:v1.0.0'
+        DOCKER_IMAGE = 'app-backend:v1.0.0'
     }
 
     stages {
