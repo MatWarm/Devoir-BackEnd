@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'app-backend:v1.0.0'
+        DOCKER_IMAGE = 'app-backend:v1.0.1'
     }
 
     stages {
